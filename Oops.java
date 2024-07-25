@@ -29,21 +29,42 @@
 
 //Abstaraction
 
-abstract class Animal {
- abstract void walk();
+// abstract class Animal {
+//  abstract void walk();
+// }
+
+// class Horse extends Animal{
+//     public void walk(){
+//         System.out.println("Horse walking on 4 legs");
+//     }
+// }
+ 
+// public class Oops{
+
+//     public static void main(String args[]){
+// Horse horse = new Horse();
+// horse.walk();
+
+//     }
+// }
+
+
+//Interfaces
+interface Animal {
+int eyes = 2;
+void walk();
 }
 
-class Horse extends Animal{
+class Horse implements Animal{
     public void walk(){
-        System.out.println("Horse walking on 4 legs");
+        System.out.println("Horse is walking on the grass");
     }
 }
 
 public class Oops{
-
-    public static void main(String args[]){
-Horse horse = new Horse();
-horse.walk();
-
-    }
+public static void main(String[] args) {
+ Horse horse = new  Horse();
+ horse.walk();  
 }
+}
+
