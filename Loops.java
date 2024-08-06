@@ -12,10 +12,8 @@ public class Loops{
         // }
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
-        int sum=0;
-        for(int i=0; i<=n; i++){
-            sum = sum + i;
+        for(int i=0; i<=10; i++){
+            System.out.println(n+" x "+i+" = "+(i*n));
         }
-        System.out.println("Sum is:"+sum);
     }
 }
