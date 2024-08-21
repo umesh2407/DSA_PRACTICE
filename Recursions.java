@@ -1,14 +1,16 @@
 public class Recursions {
 
-    public static void printNum(int n){
-        if(n==0){
+    public static void printSumOfNum(int i, int n, int sum) {
+        if (i == n) {
+            sum = sum + i;
+            System.out.println(sum);
             return;
         }
-System.out.println(n);
-printNum(n-1);
+        sum =  sum +i;
+        printSumOfNum(i+1, n, sum);
     }
+
     public static void main(String[] args) {
-        int n=5;
-        printNum(n);
+        printSumOfNum(1, 5, 0);
     }
 }
