@@ -37,17 +37,3 @@
 //         System.out.println(fact);
 //     }
 // }
-
-// //fibonacci series 
-// public class Recursions {
-
-//     public static void fibonacci(int a, int b, int n){
-//         int c = a + b;
-// System.out.print(c);
-// fibonacci(b,c,n-1);
-//     }
-//     public static void main(String[] args) {
-//         int n = 5;
-//         fibonacci(0,1,5);
-//     }
-// } 
